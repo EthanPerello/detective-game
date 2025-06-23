@@ -111,19 +111,6 @@ This project uses Dojo Engine (ECS for Starknet) to manage provable game state:
 
 ## 🔧 Known Limitations & In-Progress Improvements
 
-Some features and polish were deferred due to the tight game jam timeline. These are actively being worked on or planned:
-
-- [ ] Add loading indicators for blockchain interactions
-- [ ] Improve mobile responsiveness (especially chat UI)
-- [ ] Refactor fallback logic to prioritize blockchain-first execution
-- [ ] Expand character bios and case descriptions
-- [ ] Hide spoiler content on results page after incorrect guesses
-- [ ] Integrate Cartridge Controller
-
----
-
-## 🔧 Known Limitations & In-Progress Improvements
-
 Due to the short jam timeframe, some features and refinements are still in progress:
 
 - [ ] Show loading indicators during blockchain interactions
@@ -139,7 +126,7 @@ Due to the short jam timeframe, some features and refinements are still in progr
 
 Post-jam, the following features are planned to expand depth and replayability:
 
-- 🧩 More cases with branching narratives
+- 🧩 More cases and more suspects
 - 🧠 Procedurally generated mysteries powered by AI
 - 🕒 Solve-time tracking and global statistics
 - 🎖 Tokenized case completions
