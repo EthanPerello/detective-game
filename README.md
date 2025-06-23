@@ -105,6 +105,7 @@ Due to the game jam time constraints, the following items are in-progress or def
 * [ ] Ensure all views are fully responsive and scrollable (especially chat)
 * [ ] Improve blockchain-first logic and deprecate fallback handling
 * [ ] More detailed character bios and case descriptions
+* [ ] Remove spoilers from the results page for incorrect accusations
 * [ ] Deploy frontend to Vercel
 
 ---
