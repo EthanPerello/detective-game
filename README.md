@@ -122,23 +122,34 @@ Some features and polish were deferred due to the tight game jam timeline. These
 
 ---
 
+## 🔧 Known Limitations & In-Progress Improvements
+
+Due to the short jam timeframe, some features and refinements are still in progress:
+
+- [ ] Show loading indicators during blockchain interactions
+- [ ] Improve mobile responsiveness (especially the chat interface)
+- [ ] Prioritize blockchain-first logic over fallback behavior
+- [ ] Expand character bios and case descriptions
+- [ ] Hide spoilers on results screen for incorrect accusations
+- [ ] Integrate Cartridge Controller for standardized onchain interactions
+
+---
+
 ## 🚀 Future Features & Roadmap
 
-These features are planned post-jam to expand the game's depth and replayability:
+Post-jam, the following features are planned to expand depth and replayability:
 
-* 🧩 Additional cases with branching narratives
-* 🧠 AI-generated procedural cases
-* 🕒 Solve-time tracking and global time-based stats
-* 🎖 Tokenized case completions:
-
-  * Unique reward NFTs for completing cases
-  * Tiered rewards for solving multiple mysteries
-* ❤️ “Like/Dislike” relationship meter with suspects
-* 🔍 “Important clue” tracking system with visual alerts
-* 🤝 Multiplayer Mode:
-
-  * Each player chats with a suspect
-  * Group reconvening phases before voting
+- 🧩 More cases with branching narratives
+- 🧠 Procedurally generated mysteries powered by AI
+- 🕒 Solve-time tracking and global statistics
+- 🎖 Tokenized case completions
+  - Unique reward NFTs for finishing cases
+  - Tiered achievements for solving multiple mysteries
+- ❤️ Relationship meter showing suspect affinity over time
+- 🔍 Clue-tracking interface with visual alerts
+- 🤝 Multiplayer mode
+  - Players interview suspects independently
+  - Reconvene to deliberate and vote as a team
 
 ---
 
