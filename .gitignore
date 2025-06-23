@@ -45,3 +45,8 @@ frontend/public/*.svg
 
 # Ignore all images EXCEPT tracked ones
 !frontend/public/images/*.png
+
+
+# Dojo/Cairo build artifacts
+Scarb.lock
+target/
