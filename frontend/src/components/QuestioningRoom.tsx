@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+
+
 interface Character {
   id: number;
   name: string;
@@ -35,8 +38,8 @@ const QuestioningRoom: React.FC<QuestioningRoomProps> = ({
 
   const fetchCharacters = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/api/characters');
-      setCharacters(response.data);
+        const response = await axios.get(`${BASE_URL}/api/characters`);
+        setCharacters(response.data);
     } catch (error) {
       console.error('Failed to fetch characters:', error);
       // Fallback data with explicit gender assignments

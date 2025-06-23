@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+
+
 interface Character {
   id: number;
   name: string;
@@ -77,8 +80,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     setIsTyping(true);
 
     try {
-      const response = await axios.post('http://localhost:3001/api/chat', {
-        characterId: character.id,
+        const response = await axios.post(`${BASE_URL}/api/chat`, {
+            characterId: character.id,
         message: currentMessage,
         gameId: gameId
       });

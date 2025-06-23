@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+
+
 interface Case {
   id: number;
   title: string;
@@ -30,8 +33,8 @@ const HomePage: React.FC<HomePageProps> = ({ onStartCase, blockchainConnected = 
 
   const fetchCases = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/api/cases', {
-        params: { player: 'demo_player' } // In a real app, get from wallet
+        const response = await axios.get(`${BASE_URL}/api/cases`, {
+            params: { player: 'demo_player' } // In a real app, get from wallet
       });
       setCases(response.data);
       if (response.data.length > 0) {

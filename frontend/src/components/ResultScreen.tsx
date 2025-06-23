@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
+
+
 interface GameResult {
   won: boolean;
   accusedCharacter: number;
@@ -30,7 +33,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({ result, onPlayAgain }) => {
     try {
       // In a real app, you'd get the actual player address
       const playerAddress = 'demo_player';
-      const response = await axios.get(`http://localhost:3001/api/game/ranking/${playerAddress}`);
+      const response = await axios.get(`${BASE_URL}/api/game/ranking/${playerAddress}`);
       setRankingInfo(response.data);
     } catch (error) {
       console.error('Failed to fetch ranking info:', error);
