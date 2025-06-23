@@ -114,7 +114,7 @@ This project uses Dojo Engine (ECS for Starknet) to manage provable game state:
 Due to the short jam timeframe, some features and refinements are still in progress:
 
 - [ ] Show loading indicators during blockchain interactions
-- [ ] Improve mobile responsiveness (especially the chat interface)
+- [ ] Improve UI (especially the chat interface)
 - [ ] Prioritize blockchain-first logic over fallback behavior
 - [ ] Expand character bios and case descriptions
 - [ ] Hide spoilers on results screen for incorrect accusations
