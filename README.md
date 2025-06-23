@@ -6,6 +6,18 @@ This project was created for [Dojo Game Jam 6](https://github.com/dojoengine), s
 
 ---
 
+## 🌐 Live Demo
+
+Play it instantly (no setup required):  
+👉 [https://detective-game-iota.vercel.app](https://detective-game-iota.vercel.app)
+
+- Frontend hosted on **Vercel**
+- Backend powered by **Render**
+
+> The game is fully functional with AI responses and onchain recording — just click and play.
+
+---
+
 ## 🎮 Gameplay
 
 - Interrogate 3 AI-powered suspects, each with unique personalities  
@@ -25,13 +37,6 @@ This project was created for [Dojo Game Jam 6](https://github.com/dojoengine), s
 
 ---
 
-## ✅ Live Demo
-
-🎮 Play now (no setup required):  
-👉 **[detective-game-iota.vercel.app](https://detective-game-iota.vercel.app)**
-
----
-
 ## 📦 Project Structure
 
 ```
@@ -42,7 +47,7 @@ This project was created for [Dojo Game Jam 6](https://github.com/dojoengine), s
 ├── frontend/       # React-based game client
 ├── scripts/        # Dev helper scripts
 ├── src/            # Dojo smart contracts (Cairo)
-├── dojo\_dev.toml   # Dojo deployment config
+├── dojo_dev.toml   # Dojo deployment config
 ├── Scarb.toml      # Cairo project config
 ├── LICENSE
 ├── README.md
@@ -52,66 +57,88 @@ This project was created for [Dojo Game Jam 6](https://github.com/dojoengine), s
 
 ---
 
+## ✅ Submission Details
+
+- **Track**: Full Game Track  
+- **World Address**: `0x0598cc6424eb59171928b1f7da3144c33a80ebe8f1f5c2e67ad9731b1e32e7f4`  
+- **RPC URL**: `https://api.cartridge.gg/x/detective-game-6/katana`  
+- **GitHub**: [github.com/EthanPerello/detective-game](https://github.com/EthanPerello/detective-game)  
+
+---
+
 ## 🕹 How to Play Locally
 
-### 🔐 API Key Setup
+### 🔐 API Key Setup (Required)
 
-If you want to run the backend locally, create a `.env` file in the `backend/` directory with:
+To use the AI-powered suspect chat, create a `.env` file in the `backend/` directory with:
 
 ```env
 OPENAI_API_KEY=your-api-key-here
 ````
 
-Get a key at: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
+You can get an API key from: [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 
-### Run Locally
+### Run the Game
 
 ```bash
-# Backend (AI logic)
+# 1. Start the backend (AI logic)
 cd backend
 npm install
 npm start
 
-# Frontend (game UI)
+# 2. Start the frontend (game UI)
 cd frontend
 npm install
 npm run dev
 ```
 
+> Interrogate characters through chat, then make one final accusation. If connected to the blockchain, your game result is permanently recorded onchain.
+
 ---
 
-## ⛓ Onchain Game State via Dojo
+## 🧠 Onchain Logic via Dojo
 
-This project uses the Dojo Engine (ECS for Starknet) to manage provable game state:
+This project uses Dojo Engine (ECS for Starknet) to manage provable game state:
 
 * `Player`: Tracks connected player sessions
 * `Game`: Stores each game instance
-* `Accusation`: Records player accusations
-* `Events`: Emits `GameStarted` and `AccusationMade` for indexing
-
-Deployment powered by Katana (L2 devnet), Torii, and Sozo.
-
----
-
-## 🔧 Known Limitations & Fixes in Progress
-
-* [ ] Add loading indicators for blockchain interactions
-* [ ] Improve mobile responsiveness (chat UI)
-* [ ] Hide spoilers for incorrect accusations
-* [ ] Expand bios and case variety
-* [ ] Add Cartridge Controller integration
+* `Accusation`: Records the result of a player's accusation
+* `Events`: Emit `GameStarted` and `AccusationMade` for indexing
+* `Scarb.toml` structure for compiling Cairo contracts
+* Deployed to Slot using `katana`, `torii`, and `sozo`
 
 ---
 
-## 🚀 Planned Features
+## 🔧 Known Limitations & In-Progress Improvements
 
-* 🧩 More cases with branching dialogue
-* 🧠 Procedural case generation via AI
-* 🕒 Solve-time rankings and stats
-* 🎖 Reward NFTs for solving cases
-* ❤️ Relationship meter with characters
-* 🔍 Visual clue tracker
-* 🤝 Multiplayer interrogation + voting
+Some features and polish were deferred due to the tight game jam timeline. These are actively being worked on or planned:
+
+- [ ] Add loading indicators for blockchain interactions
+- [ ] Improve mobile responsiveness (especially chat UI)
+- [ ] Refactor fallback logic to prioritize blockchain-first execution
+- [ ] Expand character bios and case descriptions
+- [ ] Hide spoiler content on results page after incorrect guesses
+- [ ] Integrate Cartridge Controller
+
+---
+
+## 🚀 Future Features & Roadmap
+
+These features are planned post-jam to expand the game's depth and replayability:
+
+* 🧩 Additional cases with branching narratives
+* 🧠 AI-generated procedural cases
+* 🕒 Solve-time tracking and global time-based stats
+* 🎖 Tokenized case completions:
+
+  * Unique reward NFTs for completing cases
+  * Tiered rewards for solving multiple mysteries
+* ❤️ “Like/Dislike” relationship meter with suspects
+* 🔍 “Important clue” tracking system with visual alerts
+* 🤝 Multiplayer Mode:
+
+  * Each player chats with a suspect
+  * Group reconvening phases before voting
 
 ---
 
