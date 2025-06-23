@@ -97,16 +97,17 @@ This project uses Dojo Engine (ECS for Starknet) to manage provable game state:
 
 ---
 
-## 🔧 Known Limitations / In-Progress Fixes
+## 🔧 Known Limitations & In-Progress Improvements
 
-Due to the game jam time constraints, the following items are in-progress or deferred:
+Some features and polish were deferred due to the tight game jam timeline. These are actively being worked on or planned:
 
-* [ ] Add loading indicator during blockchain transactions
-* [ ] Ensure all views are fully responsive and scrollable (especially chat)
-* [ ] Improve blockchain-first logic and deprecate fallback handling
-* [ ] More detailed character bios and case descriptions
-* [ ] Remove spoilers from the results page for incorrect accusations
-* [ ] Deploy frontend to Vercel
+- [ ] Add loading indicators for blockchain interactions
+- [ ] Improve mobile responsiveness (especially chat UI)
+- [ ] Refactor fallback logic to prioritize blockchain-first execution
+- [ ] Expand character bios and case descriptions
+- [ ] Hide spoiler content on results page after incorrect guesses
+- [ ] Integrate Cartridge Controller
+- [ ] Deploy frontend to Vercel for live demo access
 
 ---
 
