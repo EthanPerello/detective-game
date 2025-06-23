@@ -61,7 +61,7 @@ This project was created for [Dojo Game Jam 6](https://github.com/dojoengine), s
 To use the AI-powered suspect chat, create a `.env` file in the `backend/` directory with:
 ```env
 OPENAI_API_KEY=your-api-key-here
-```
+````
 You can get a key at https://platform.openai.com
 
 # 2. Start the backend (AI logic)
