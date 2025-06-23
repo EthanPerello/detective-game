@@ -1,0 +1,19 @@
+{
+  "name": "detective-game-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Detective Game with OpenAI integration",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "openai": "^4.20.1"
+  },
+  "keywords": ["detective", "game", "openai", "blockchain"],
+  "author": "Detective Game Team",
+  "license": "MIT"
+}
