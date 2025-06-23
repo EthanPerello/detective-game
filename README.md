@@ -31,7 +31,7 @@ Play it instantly (no setup required):
 ## 🧱 Tech Stack
 
 - **Frontend**: React, Vite, TypeScript, Tailwind CSS  
-- **Backend**: Node.js, Express, OpenAI API (GPT-4o-mini)  
+- **Backend**: Node.js, Express, OpenAI API (GPT-4o)  
 - **Blockchain**: Starknet + Dojo Engine (Katana + Torii)  
 - **Hybrid Architecture**: Blockchain-first with off-chain AI integration fallback  
 
@@ -114,7 +114,7 @@ This project uses Dojo Engine (ECS for Starknet) to manage provable game state:
 Due to the short jam timeframe, some features and refinements are still in progress:
 
 - [ ] Show loading indicators during blockchain interactions
-- [ ] Improve UI (especially the chat interface)
+- [ ] Improve UI and responsiveness (especially the chat interface)
 - [ ] Prioritize blockchain-first logic over fallback behavior
 - [ ] Expand character bios and case descriptions
 - [ ] Hide spoilers on results screen for incorrect accusations
