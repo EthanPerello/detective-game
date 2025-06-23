@@ -107,7 +107,7 @@ Some features and polish were deferred due to the tight game jam timeline. These
 - [ ] Expand character bios and case descriptions
 - [ ] Hide spoiler content on results page after incorrect guesses
 - [ ] Integrate Cartridge Controller
-- [ ] Deploy frontend to Vercel for live demo access
+- [ ] Deploy frontend to Vercel and backend to Render
 
 ---
 
